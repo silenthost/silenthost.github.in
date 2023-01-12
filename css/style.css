@@ -134,14 +134,47 @@ font-size: 2em;  }
 
 .gcon{
   background-color: white;
+  margin: 10px;
   height: 300px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto;
+
 }
 .griditem{
   width: 50px;
   margin: 8px;
   text-align: center;
   border-radius: 10%;
+
+}
+.subm{
+	margin: 20px 10px;
+	padding: 10px 15px;
+	border: none;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	background: rgb(89, 150, 255);
+  transition: all 0.3s linear 0.3s;
+}
+.subm:hover{
+  background-color: #2a7588;
+  transform: matrix(1,0.50,0.50,1,100,50);
+
+}
+#sub{
+ /* animation-name: tran;
+ animation-duration: 5s;
+ animation-delay:41s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate; */
+animation: tran  4s linear 5 5s alternate;
+}
+@keyframes tran{
+0%{color: red;  transform: translate(0px ,0px)}
+50%{color: yellow; transform: translate(10px ,10px);}
+100%{color: black; transform: translate(20px ,20px)}
 }
